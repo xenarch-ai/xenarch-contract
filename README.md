@@ -7,15 +7,22 @@ Splits incoming USDC payments between content publishers and Xenarch treasury. I
 ## Setup
 
 ```bash
-npm install
-cp .env.example .env  # add deployer private key + RPC URL
-npx hardhat test
+# Install Foundry (https://getfoundry.sh)
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+
+# Build
+forge build
+
+# Test
+forge test -vvv
 ```
 
 ## Deploy
 
 ```bash
-npx hardhat run scripts/deploy.js --network base-sepolia
+cp .env.example .env  # add deployer private key, RPC URLs, USDC + treasury addresses
+forge script script/Deploy.s.sol --rpc-url base-sepolia --broadcast --verify
 ```
 
 ## License

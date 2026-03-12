@@ -4,14 +4,16 @@ USDC splitter smart contract on Base L2. Splits incoming USDC payments between p
 
 ## Stack
 
-- Solidity 0.8.x, Hardhat, Base L2
-- Key file: `contracts/XenarchSplitter.sol`
+- Solidity 0.8.20, Foundry, Base L2
+- Key file: `src/XenarchSplitter.sol`
 
 ## Commands
 
-- Test: `npx hardhat test`
-- Deploy: `npx hardhat run scripts/deploy.js --network base-sepolia`
-- Verify: `npx hardhat verify --network base-sepolia <address>`
+- Build: `forge build`
+- Test: `forge test -vvv`
+- Deploy (Sepolia): `forge script script/Deploy.s.sol --rpc-url base-sepolia --broadcast --verify`
+- Deploy (Mainnet): `forge script script/Deploy.s.sol --rpc-url base-mainnet --broadcast --verify`
+- Verify: `forge verify-contract <address> src/XenarchSplitter.sol:XenarchSplitter --chain base`
 
 ## Deployed Addresses
 
