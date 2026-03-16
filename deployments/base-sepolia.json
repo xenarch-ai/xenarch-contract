@@ -1,0 +1,24 @@
+{
+  "network": "base-sepolia",
+  "chain_id": 84532,
+  "contracts": {
+    "MockUSDC": {
+      "address": "0xc5aDdd66Da733101A5468857Aa3C6689Af9d1DDc",
+      "tx_hash": null,
+      "verified": true,
+      "basescan": "https://sepolia.basescan.org/address/0xc5addd66da733101a5468857aa3c6689af9d1ddc"
+    },
+    "XenarchSplitter": {
+      "address": "0x7ecfe8f83eab6ba170063d1f1fe7c33695a9ce1d",
+      "tx_hash": "0xd189fb0013167e9fe446a6a0c3609aa247db4c5a371fc385f22406cb7c3d4d1e",
+      "verified": true,
+      "basescan": "https://sepolia.basescan.org/address/0x7ecfe8f83eab6ba170063d1f1fe7c33695a9ce1d"
+    }
+  },
+  "constructor_args": {
+    "usdc": "0xc5aDdd66Da733101A5468857Aa3C6689Af9d1DDc",
+    "treasury": "0x26ae725d6C3837b0D30Ff39e82AC925e9ffD024f"
+  },
+  "deployer": "0x26ae725d6C3837b0D30Ff39e82AC925e9ffD024f",
+  "deployed_at": "2026-03-16"
+}
