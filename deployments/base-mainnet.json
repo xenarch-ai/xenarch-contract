@@ -1,0 +1,17 @@
+{
+  "network": "base-mainnet",
+  "chain_id": 8453,
+  "contracts": {
+    "XenarchSplitter": {
+      "address": "0xC6D3a6B6fcCD6319432CDB72819cf317E88662ae",
+      "verified": true,
+      "basescan": "https://basescan.org/address/0xC6D3a6B6fcCD6319432CDB72819cf317E88662ae"
+    }
+  },
+  "constructor_args": {
+    "usdc": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "treasury": "0x99707f808a8Acf3A6aeCD2A9d30c21fdED8d547a"
+  },
+  "deployer": "0x99707f808a8Acf3A6aeCD2A9d30c21fdED8d547a",
+  "deployed_at": "2026-03-19"
+}
